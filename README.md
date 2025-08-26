@@ -1,4 +1,4 @@
-# 📈 Advance Statistical Modeling
+## 📈 Advance Statistical Modeling
 
 A curated collection of advanced statistical modeling projects applying a variety of techniques including:
 
