@@ -8,6 +8,7 @@ A curated collection of advanced statistical modeling projects applying a variet
 - **Survival Analysis**
 - **Multilevel (Hierarchical) Models**
 - **Classification Algorithms**
+- **Tree-Based Machine Learning Models (Bagging, Random Forest, BART)**
 
 Each folder contains a real-world case study with **end-to-end analysis** in **R**, covering:
 - Business problem framing
@@ -30,6 +31,7 @@ Each folder contains a real-world case study with **end-to-end analysis** in **R
 | `online-retail-promotion-glm` | GLM for evaluating marketing promotions in retail |
 | `snack-chain-sales-analysis` | Sales forecasting and drivers analysis across a snack food chain |
 | `telco-churn-prediction-models` | Classification models to predict customer churn in telecom |
+| `carseats-sales-tree-based-modeling` | **NEW:** Tree-based modeling (Regression Trees, Bagging, Random Forest, BART) on Carseats dataset to identify key drivers of Sales |
 
 ---
 
@@ -41,6 +43,9 @@ Each folder contains a real-world case study with **end-to-end analysis** in **R
 - GLM (Gaussian, Poisson families)
 - Multilevel / Mixed Models
 - Cox Proportional Hazards
+- **Regression Trees & Pruned Trees**
+- **Bagging and Random Forest**
+- **Bayesian Additive Regression Trees (BART)**
 - Model Selection: AIC/BIC, Cross-validation
 - Residual and Assumption Diagnostics
 - Data Visualization (histograms, correlation matrices, QQ plots)
@@ -50,7 +55,8 @@ Each folder contains a real-world case study with **end-to-end analysis** in **R
 ## 🛠 Tools & Technologies
 
 - **R** (Core Language)
-- `tidyverse`, `ggplot2`, `dplyr`, `car`, `survival`, `lme4`, `stargazer`
+- `tidyverse`, `ggplot2`, `dplyr`, `car`, `survival`, `lme4`, `stargazer`  
+- `tree`, `randomForest`, `partykit`, `dbarts`, `bartMachine`  
 - PDF reports for documentation and insight sharing
 
 ---
@@ -61,6 +67,7 @@ Through these projects, you’ll learn to:
 - Frame business and analytical problems clearly
 - Select appropriate statistical models for different data types and goals
 - Assess model quality using statistical tests and residual analysis
+- Apply ensemble and tree-based learning methods for nonlinear patterns
 - Translate analytical outputs into meaningful business insights
 
 ---
@@ -69,6 +76,7 @@ Through these projects, you’ll learn to:
 
 `#regression-analysis` `#classification-models` `#survival-analysis`  
 `#glm` `#poisson-distribution` `#multilevel-models` `#churn-analysis`  
+`#tree-based-models` `#random-forest` `#bart`  
 `#time-series` `#panel-data` `#R-programming`
 
 ---
