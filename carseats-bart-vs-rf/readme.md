@@ -1,10 +1,10 @@
-Carseats Sales Prediction and Tree-Based Modeling
+#Carseats Sales Prediction and Tree-Based Modeling
 
 This project analyzes the Carseats dataset from the ISLR package to evaluate how store characteristics, pricing strategies, and demographic factors influence product sales. The analysis applies multiple machine learning models—including regression trees, bagging, random forests, and BART—to compare predictive performance and identify the strongest drivers of Sales.
 
 The objective is to determine which store-level and market-level features best explain Sales and which modeling approach provides the most accurate predictions.
 
-📊 Business Questions
+##📊 Business Questions
 
 This project investigates the following:
 
