@@ -63,4 +63,78 @@ All models were evaluated using **Test MSE**.
 
 ### Exploratory Findings
 - Sales distribution is slightly right-skewed but suitable for regression.  
-- Predi
+- Predictors show no strong correlations (>80%), lowering multicollinearity concerns.  
+- Each predictor contributes unique information, supporting diverse modeling techniques.
+
+### Model Performance (Test MSE Comparison)
+
+| Model | Test MSE | Interpretation |
+|-------|----------|----------------|
+| **Regression Tree** | 4.91 | Simple model underfits; moderate error |
+| **Pruned Tree** | 4.98 | Slight performance drop after pruning |
+| **Bagging** | 2.83 | Strong improvement; variance reduction effective |
+| **Random Forest** | 2.74 (mtry = 6) | Best ensemble performer after BART; handles nonlinearities well |
+| **BART** | **1.55** | **Best model overall; captures complex interactions** |
+
+### Variable Importance (Across Models)
+
+**Most influential predictors:**
+- ShelveLoc  
+- Price  
+- CompPrice  
+- Age  
+- Advertising  
+
+**Lower-value predictors:**
+- Population  
+- Urban  
+- Education  
+
+These add limited predictive value and appear consistently low across model importance rankings.
+
+---
+
+## 💡 Final Recommendation
+
+Based on Test MSE performance, **BART** is the most accurate model for predicting Sales, significantly outperforming all other models. Random Forest and Bagging also deliver strong results and should be preferred over single-tree methods for business analytics applications.
+
+Businesses modeling retail sales should prioritize:
+- **Nonlinear ensemble methods** (Bagging, Random Forest, BART)  
+- **Key predictors such as ShelveLoc, Price, and Competition Pricing**  
+
+Regression trees remain valuable for interpretability but lack predictive precision compared to ensemble models.
+
+---
+
+## 🛠 Tools Used
+
+- **R Programming**  
+  - `ggplot2`  
+  - `tree`  
+  - `randomForest`  
+  - `partykit`  
+  - `dbarts` / `bartMachine`  
+  - `corrplot`  
+- Exploratory visualization  
+- Tree-based modeling and ensemble techniques  
+
+---
+
+## 📁 Files Included
+
+- `Carseats_Analysis_Aryan_Sharma.R` — Full analysis code  
+- `Carseats_Sales_Report.pdf` — Detailed write-up with interpretations  
+- `carseats_plots/` — Plots, tree diagrams, and visualizations  
+
+---
+
+## 👤 Author
+
+**Aryan Sharma**  
+Retail Analytics | Machine Learning | Tree-Based Models | R Programming
+
+---
+
+## 📘 License
+
+This project is intended for educational and portfolio use. Attribution is appreciated if reused or referenced.
